@@ -1,0 +1,16 @@
+vs:
+  csvFilePath: /Users/alexanderbuob/IdeaProjects/vivid-api/src/main/csv/sampleTickets.csv
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /console
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: none
+server:
+  port: 8181
