@@ -1,5 +1,5 @@
-vs:
-  csvFilePath: /Users/alexanderbuob/IdeaProjects/vivid-api/src/main/csv/sampleTickets.csv
+ticket:
+  csvFilePath: /Users/alexanderbuob/IdeaProjects/ticket-api/src/main/csv/sampleTickets.csv
 spring:
   h2:
     console:
