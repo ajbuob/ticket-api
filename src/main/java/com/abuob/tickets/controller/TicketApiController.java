@@ -21,9 +21,9 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/api")
-public class VividApiController {
+public class TicketApiController {
 
-    private static final Logger logger = LoggerFactory.getLogger(VividApiController.class);
+    private static final Logger logger = LoggerFactory.getLogger(TicketApiController.class);
 
     private static final String SEARCH_TYPE_PRICE = "price";
     private static final String SEARCH_TYPE_SEAT = "seat";
@@ -32,7 +32,7 @@ public class VividApiController {
     private InventoryService inventoryService;
 
     @Autowired
-    public VividApiController(InventoryService inventoryService) {
+    public TicketApiController(InventoryService inventoryService) {
         this.inventoryService = inventoryService;
     }
 
