@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "b0b8e56c-eb44-48df-843c-72e12bfd3176",
+		"name": "TICKET_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find All Available By Event",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8181/api/inventory/findAllAvailableByEvent/162",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"inventory",
+						"findAllAvailableByEvent",
+						"162"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sell Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sellerId\": 4,\n\t\"eventId\": 162,\n\t\"section\": 200,\n\t\"quantity\": 1,\n\t\"price\": 123.45,\n\t\"row\": \"QQ\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/api/inventory/sellTicket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"inventory",
+						"sellTicket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy Ticket",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"buyerId\": 4,\n\t\t\"inventoryId\": 1524\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/api/inventory/buyTicket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"inventory",
+						"buyTicket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Best",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8181/api/inventory/findBestAvailableByQuantity/162/2?searchType=seat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"inventory",
+						"findBestAvailableByQuantity",
+						"162",
+						"2"
+					],
+					"query": [
+						{
+							"key": "searchType",
+							"value": "seat"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
