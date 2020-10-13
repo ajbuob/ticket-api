@@ -24,7 +24,7 @@
         <commons.lang.version>3.9</commons.lang.version>
         <dbh2.version>1.4.197</dbh2.version>
         <jackson.yaml.version>2.9.10</jackson.yaml.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <mockito.version>3.1.0</mockito.version>
         <assertj.version>3.13.2</assertj.version>
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
