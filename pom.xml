@@ -20,7 +20,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <guava.version>28.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <commons.lang.version>3.9</commons.lang.version>
         <dbh2.version>1.4.197</dbh2.version>
         <jackson.yaml.version>2.9.10</jackson.yaml.version>
