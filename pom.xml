@@ -22,7 +22,7 @@
         <java.version>1.8</java.version>
         <guava.version>28.1-jre</guava.version>
         <commons.lang.version>3.9</commons.lang.version>
-        <dbh2.version>1.4.197</dbh2.version>
+        <dbh2.version>2.0.206</dbh2.version>
         <jackson.yaml.version>2.9.10</jackson.yaml.version>
         <junit.version>4.12</junit.version>
         <mockito.version>3.1.0</mockito.version>
